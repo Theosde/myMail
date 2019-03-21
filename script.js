@@ -24,7 +24,7 @@ document.getElementById("add").addEventListener("click",function(){
 
   function aleatoire(size) {
       var liste = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","0","1","2","3","4","5","6","7","8","9"];
-      var result = '';
+      var result = '';  
       for (i = 0; i < size; i++) {
           result += liste[Math.floor(Math.random() * liste.length)];
       }
@@ -48,13 +48,12 @@ if (document.getElementById("message").value == "") {
 }
 
 
-
-
     trash[0].addEventListener("click",function(){
       this.parentNode.remove();
       console.log(document.getElementById("count").parentNode.textContent);
       document.getElementById("count").textContent = document.getElementsByClassName('trash').length;
 
     });
+
 
 })
